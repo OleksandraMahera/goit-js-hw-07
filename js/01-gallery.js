@@ -35,7 +35,7 @@ function onImageClick(event) {
     instance.show();
 
     // Вихід з модального вікна з "Escape"
-    if (instance.show() === treu) {
+    if (instance.show() === true) {
         document.addEventListener('keydown', onModalCloseByEscape);
     } else {
         document.removeEventListener('keydown', onModalCloseByEscape);
@@ -55,6 +55,7 @@ const link = document.querySelectorAll('.gallery_link');
 link.forEach(A => { A.setAttribute('onClick', 'return false;'); });
 
 console.log(galleryItems);
+
 
 
 
